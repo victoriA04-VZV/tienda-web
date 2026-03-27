@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+      <div class="menu logo-nav">
+        <a href="index.html" class="logo">PETSHOP</a>
+        <nav class="navigation">
+          <ul>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li class="search-icon">
+              <input type="search" placeholder="Buscar">
+            </li>
+            <li class="car"><a href="carrito.html" >Carrito</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container-carrito">
+              
+                  <h2>Realizar Compra</h2>
+                  <form id="procesar-pago" action="#" method="POST">
+                      <div class="contenido titulo">
+                          <label for="cliente" class="">Cliente :</label>
+                          <input type="text" class="form-control" id="cliente" name="cliente" placeholder="Ingrese su nombre" required>
+                      </div>
+                      <div class="contenido titulo">
+                          <label for="email" class="">Correo :</label>
+                          <input type="email" class="form-control" id="correo" name="correo" placeholder="Ingrese su correo" required>
+                      </div>
+
+                      <div id="carrito" class="contenido">
+                          <table class="tabla" id="lista-compra">
+                              <thead>
+                                  <tr>
+                                      <th scope="col">Imagen</th>
+                                      <th scope="col">Nombre</th>
+                                      <th scope="col">Precio</th>
+                                      <th scope="col">Cantidad</th>
+                                      <th scope="col">Sub Total</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+
+                              </tbody>
+                              <tr>
+                                  <th colspan="4" scope="col" class="">SUB TOTAL :</th>
+                                  <th scope="col">
+                                      <p id="subtotal"></p>
+                                  </th>
+                              </tr>
+                              <tr>
+                                  <th colspan="4" scope="col" class="">TOTAL :</th>
+                                  <th scope="col">
+                                    <input type="text" id="total" name="monto_total" readonly>
+                                  </th>
+                              </tr>
+                          </table>
+                      </div>
+
+                      <div class="" id="loaders">
+                          <img id="cargando" src="assets/img/cargando.gif" width="220">
+                      </div>
+
+                      <div class="botones-envio">
+                              <a href="productos.html" class="button" id="volver">Seguir comprando</a>
+                              <input type="submit" class="button" id="procesar-compra" value="Realizar compra">
+                      </div>
+                  </form>
+
+      </div>
+  </main>
+    
+  <footer class="footer-section">
+    <div class="copyright-area">
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2023, todos los derechos reservados <a href="index.html">PETSHOP</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="productos.html">Productos</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer> 
+
+    <script  src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script  src="assets/js/scripts.js"></script>
+    <script src="assets/js/carrito.js"></script>
+    <script src="assets/js/pedido.js"></script>
+    <script src="assets/js/compra.js"></script>
+
+</body>
+</html>
+
